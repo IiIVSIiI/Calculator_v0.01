@@ -40,7 +40,9 @@ for (let j=0;j<operators.length;j++) {
 
 result.addEventListener('click', function() {
   let getResult=eval(operString);
-  if (getResult.length<17)
+  let str=String(getResult);
+  console.log(str);
+  if (str.length<17)
   {updisplay.textContent=getResult;}else{updisplay.textContent='Error'}
   display.textContent=''
 })
